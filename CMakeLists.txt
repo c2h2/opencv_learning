@@ -1,5 +1,7 @@
 PROJECT( opencv_apps )
 FIND_PACKAGE( OpenCV REQUIRED )
 ADD_EXECUTABLE( webcam webcam.cpp )
+ADD_EXECUTABLE( webcam2 webcam2.cpp )
 TARGET_LINK_LIBRARIES( webcam ${OpenCV_LIBS} )
+TARGET_LINK_LIBRARIES( webcam2 ${OpenCV_LIBS} )
 cmake_minimum_required(VERSION 2.8)
